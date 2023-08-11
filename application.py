@@ -1,8 +1,8 @@
 from flask import Flask, request, render_template, jsonify
-from src.pipelines.predection_pipeline import CustomData, PredictPipeline
+from src.pipelines.predection_pipelines import CustomData, PredictPipeline
 
 
-application = Flask(__name__, template_folder="templets")
+application = Flask(__name__, template_folder="templates")
 app = application
 
 
@@ -38,4 +38,4 @@ def predict_datapoint():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="127.0.0.1", debug=True,port=5000)
