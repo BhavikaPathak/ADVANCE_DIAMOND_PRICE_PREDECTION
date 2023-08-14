@@ -26,7 +26,6 @@ setup(
     install_requires=get_requirements('requirements.txt'),  # Retrieve requirements from 'requirements.txt' file
 )
 
-
 """
 The code you provided is a Python script that sets up a package using setuptools. Let's go through the code and explain each part:
 
@@ -50,9 +49,4 @@ return requirements: This line returns the requirements list.
 
 setup(...): This line sets up the package configuration using the setup function from setuptools. Here are the arguments passed to the function:
 
-name='mlproject': The name of the package.
-version='0.0.1': The version of the package.
-author='ayush-pujari-07': The name of the package author.
-author_email='ayush08.pujari@gmail.com': The email address of the package author.
-packages=find_packages(): Automatically find all packages and modules in the current directory.
-install_requires=get_requirements('requirements.txt'): Retrieve the requirements from the 'requirements.txt' file using the get_requirements function and specify them as the package's installation dependencies."""
+"""
